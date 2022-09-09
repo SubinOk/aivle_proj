@@ -1,5 +1,6 @@
 *.csv
 *.xlsx
+*.txt
 
 01_서울시 대중교통 수요분석/reference/
 01_서울시 대중교통 수요분석/rawdata/
@@ -9,4 +10,5 @@
 04_공기질 예측 모델링 및 최적화/rawdata
 04_공기질 예측 모델링 및 최적화/models
 
-Event_추석 전일 서울부산 소요시간 예측/
+Event_추석 전일 서울부산 소요시간 예측/rawdata
+Event_추석 전일 서울부산 소요시간 예측/private
