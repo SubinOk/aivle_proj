@@ -1,6 +1,8 @@
 *.csv
 *.xlsx
 *.txt
+*.json
+*.png
 
 01_서울시 대중교통 수요분석/reference/
 01_서울시 대중교통 수요분석/rawdata/
@@ -14,6 +16,12 @@
 05_올레TV 코너 몰아보기/Team/data
 
 06_스팸문자 분류/data
+
+07_내비게이션 도착시간 예측/add_data
+07_내비게이션 도착시간 예측/dragonball
+07_내비게이션 도착시간 예측/raw_data
+07_내비게이션 도착시간 예측/model
+07_내비게이션 도착시간 예측/module.py
 
 Event_추석 전일 서울부산 소요시간 예측/rawdata
 Event_추석 전일 서울부산 소요시간 예측/private
