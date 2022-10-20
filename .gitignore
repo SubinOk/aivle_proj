@@ -23,7 +23,11 @@
 07_내비게이션 도착시간 예측/model
 07_내비게이션 도착시간 예측/module.py
 
+08_서울시 유동인구 예측 모델링/data
+08_서울시 유동인구 예측 모델링/catboost_info
+
 Event_추석 전일 서울부산 소요시간 예측/rawdata
 Event_추석 전일 서울부산 소요시간 예측/private
 
 KT_DevChallenge/
+AIFB_ASSOCIATE/
