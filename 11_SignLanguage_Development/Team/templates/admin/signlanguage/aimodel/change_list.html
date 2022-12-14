@@ -1,0 +1,51 @@
+{% extends "admin/change_list.html" %}
+{% load static %}
+
+<!-- Override extrahead to add Chart.js -->
+
+    {% block content %}
+        <!— Render our chart —>
+        <div class="container">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+            <script>
+                const data1 = {{ chart_data | safe }}
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                    var data = google.visualization.arrayToDataTable(
+                        data1
+                    );
+                    var options = {
+                        // 타이틀 수정이 필요함
+                        title:'World Wide Wine Production'
+                    };
+                    var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+                    chart.draw(data, options);
+                }
+            </script>
+
+            <div id="myChart2" style="width:100%; max-width:600px; height:500px;"></div>
+            <script>
+                const data2 = {{ chart_data2 | safe }}
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                    var data = google.visualization.arrayToDataTable(
+                        data2
+                    );
+
+                    var options = {
+                        title:'World Wide Wine Production'
+                    };
+
+                    var chart = new google.visualization.PieChart(document.getElementById('myChart2'));
+                    chart.draw(data, options);
+                }
+            </script>
+        </div>
+
+            <!— Render the rest of the ChangeList view —>
+    <!-- Render the rest of the ChangeList view by calling block.super -->
+    {{ block.super }}
+{% endblock %}

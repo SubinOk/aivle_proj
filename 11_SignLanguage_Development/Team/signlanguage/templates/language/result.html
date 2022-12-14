@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'language/result_style.css' %}">
+<!-- CSS only -->
+<div class="container">
+{% for result in result_list %}
+    <span class="item">
+      <img class="result" src="{{ result.image.url }}" width="150" height="150">
+      <div class="wrap">
+        <div> 모델 예측 결과 : {{ result.result }} </div>
+        <div> 정답  : {{ result.answer }} </div>
+        <div> 예측 결과  : {{ result.equal }} </div>
+      </div>
+    </span>
+{% endfor %}
+</div>
+<img type="button" onclick="location.href='/signlanguage'" style="width:50px; height:50px;" src={% static 'img/back.png' %}>

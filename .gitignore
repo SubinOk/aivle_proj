@@ -32,6 +32,10 @@
 
 10_VOC 기반 가입자 해지 예측/data
 
+11_SignLanguage_Development/Individual/data
+11_SignLanguage_Development/Individual/model
+11_SignLanguage_Development/Individual/ref
+
 Event_추석 전일 서울부산 소요시간 예측/rawdata
 Event_추석 전일 서울부산 소요시간 예측/private
 
